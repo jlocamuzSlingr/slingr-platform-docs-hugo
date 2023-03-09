@@ -1,0 +1,3 @@
+[submodule "my-doks-site-hugo"]
+	path = my-doks-site-hugo
+	url = https://github.com/h-enk/doks.git
