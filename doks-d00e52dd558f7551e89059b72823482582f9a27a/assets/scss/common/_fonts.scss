@@ -1,19 +1,15 @@
-/* jost-regular - latin */
+/* Catamaran - latin */
 @font-face {
-  font-family: Jost;
+  font-family: 'Catamaran';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src:
-    // Google Fonts Jost
-    local("Jost Regular Regular"),   // Full Name
-    local("Jost-Regular"),           // PostScript name
-    // indestructible Jost*
-    local("Jost* Book"),
-    local("Jost-Book"),
-    url("fonts/vendor/jost/jost-v4-latin-regular.woff2") format("woff2"),
-    url("fonts/vendor/jost/jost-v4-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    // Google Fonts Catamaran
+    url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400&display=swap') format('woff2'),
+    url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400&display=swap') format('woff');
 }
+
 
 /* jost-500 - latin */
 @font-face {

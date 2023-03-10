@@ -1,14 +1,16 @@
 {{ define "main" }}
 <section class="section container-fluid mt-n3 pb-3">
+
   <div class="row justify-content-center">
-    <div class="col-lg-12 text-center">
-      <h1 class="mt-0">{{ .Title }}</h1>
+    <div class="col-lg-9 text-center">
+      <img src="/images/vendor/slingrlogo.png" alt="Alternative Text" width="350" height="350">
+
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
-      <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get-started" }}</a>
-      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/h-enk/doks">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
+      <p class="lead" style="margin-bottom: 30px;">{{ .Params.lead | safeHTML }}</p>
+      <a class="btn btn-primary btn-lg px-4" style="margin-bottom: 50px;" href="/docs/prologue/introduction/" role="button">{{ i18n "get-started" }}</a>
     </div>
+    
   </div>
 </section>
 {{ end }}
@@ -16,36 +18,28 @@
 {{ define "sidebar-prefooter" }}
   {{ if eq $.Site.Language.LanguageName "English" }}
   <section class="section section-sm">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <div class="container">
       <div class="row justify-content-center text-center">
         <div class="col-lg-5">
-          <h2 class="h4">Security aware</h2>
-          <p>Get A+ scores on <a href="https://observatory.mozilla.org/analyze/doks.netlify.app">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
+          <span style='font-size:80px;'>💻</span>
+          <h2 class="h4"><a href="https://platform-docs.slingr.io/getting-started-whats-slingr-stack.html">What is Slingr?</a></h2>
+          <p>Brief explanation of <a href="https://platform-docs.slingr.io/getting-started-whats-slingr-stack.html">Slingr</a>. Define your business rules and data model, and get a working app with a UI and REST API automatically.</p>
         </div>
         <div class="col-lg-5">
-          <h2 class="h4">Fast by default ⚡️</h2>
-          <p>Get 100 scores on <a href="https://googlechrome.github.io/lighthouse/viewer/?gist=59aafe464a68f8bc30b8e9a636d5b053">Google Lighthouse</a> by default. Doks removes unused css, prefetches links, and lazy loads images.</p>
+          <span style='font-size:80px;'>💸</span>
+          <h2 class="h4"><a href="https://developer-portal.slingrs.io/signUp.html">Sign Up Free</a></h2>
+          <p>Start building amazing apps with Slingr!  Create a developer <a href="https://developer-portal.slingrs.io/signUp.html">Account</a>  today and bring your ideas to life with this powerful platform. Don't wait - unleash your creativity now!</p>
         </div>
         <div class="col-lg-5">
-          <h2 class="h4">SEO-ready</h2>
-          <p>Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.</p>
+          <span style='font-size:80px;'>👋</span>
+          <h2 class="h4"><a href="https://www.youtube.com/channel/UCVC7opcy2Yi3vFf73CuajXw">Slingr Channel</a></h2>
+          <p> Ready to join the Slingr community and take your app-building skills to the next level? Check out <a href="https://www.youtube.com/channel/UCVC7opcy2Yi3vFf73CuajXw"> Slingr Channel </a> for a firsthand look at the power of our platform!  
+          </p>
         </div>
       </div>
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-5">
-          <h2 class="h4">Full text search</h2>
-          <p>Search your Doks site with FlexSearch. Easily customize index settings and search options to your liking.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Page layouts</h2>
-          <p>Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Dark mode</h2>
-          <p>Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.</p>
-        </div>
-      </div>
-    </div>
+
   </section>
   {{ end }}
 {{ end }}
