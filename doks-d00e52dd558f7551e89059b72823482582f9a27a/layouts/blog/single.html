@@ -6,6 +6,9 @@
       <h1>{{ .Title }}</h1>
       {{ partial "main/blog-meta.html" . }}
     </div>
+    {{ if .Params.lead }}
+   <div>messi</div>
+    {{ end }}
   </div>
   <div class="col-md-13">
     <div>

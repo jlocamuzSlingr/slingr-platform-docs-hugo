@@ -6,11 +6,13 @@
 
 .footer ul {
   margin-bottom: 0;
+  text-align: center;
 }
 
 .footer li {
   font-size: $font-size-sm;
   margin-bottom: 0;
+  color: rgb(166, 166, 166);
 }
 
 @include media-breakpoint-up(md) {

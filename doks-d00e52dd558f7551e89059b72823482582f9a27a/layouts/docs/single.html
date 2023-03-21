@@ -12,10 +12,10 @@
 		{{ end -}}
 		{{ if .Params.toc -}}
 		<main class="docs-content col-lg-11 col-xl{{ if eq .Site.Params.options.fullWidth false }}-9{{ end }}">
-		{{ else -}}
-		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
-		{{ end -}}
-			{{ if .Site.Params.options.breadCrumb -}}
+			{{ else -}}
+			<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+				{{ end -}}
+				{{ if .Site.Params.options.breadCrumb -}}
 				<!-- https://discourse.gohugo.io/t/breadcrumb-navigation-for-highly-nested-content/27359/6 -->
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
@@ -23,11 +23,14 @@
 						<li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
 					</ol>
 				</nav>
-			{{ end }}
-			<h1>{{ .Title }}</h1>
-			<p class="lead">{{ .Params.lead | safeHTML }}</p>
-			{{ if ne .Params.toc false -}}
-			<nav class="d-xl-none" aria-label="Quaternary navigation">
+				{{ end }}
+				<h1>PANDA</h1>
+				{{ if .Params.lead }}
+					<div class="summary">HAASDSD</div>
+				{{ end }}
+				<p class="lead">{{ .Params.lead | safeHTML }}</p>
+				{{ if ne .Params.toc false -}}
+				<nav class="d-xl-none" aria-label="Quaternary navigation">
 				{{ partial "sidebar/docs-toc.html" . }}
 			</nav>
 			{{ end -}}
